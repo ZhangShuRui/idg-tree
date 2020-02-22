@@ -9,7 +9,8 @@
     "lib": "vue-cli-service build --target lib --name IdgSeed --filename main --entry packages/index.ts --report",
     "pack": "npm run lib && npm run ts",
     "test": "mocha",
-    "mock": "cpx  **/__mocks__/*.js  dist"
+    "mock": "cpx  **/__mocks__/*.js  dist",
+    "create": "node script/create"
   },
   "module": "dist/es/packages/index.js",
   "dependencies": {},
@@ -21,6 +22,7 @@
     "types"
   ],
   "devDependencies": {
+    "inquirer": "^7.0.0",
     "@idg/design": "^1.0.5",
     "@idg/idg": "^2.7.3",
     "@idg/iview": "^4.0.36",
