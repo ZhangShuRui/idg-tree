@@ -1,89 +1,66 @@
-const inquirer = require('inquirer')
-const fs = require('fs')
 const path = require('path')
+const fs = require('fs')
+const print = require('./resource/print')
+const { createPackage,createApi, createController, createComponent, createPage, createSpecificType } = require('./resource/creation')
 
-const pkgOperations = require('./resource/packageTemplate')
 
-const showLog = true
+const pkgOperations = require('./resource/template')
 
-function log(...message){
-	if(showLog) {
-		console.log(...message)
+// 类型，包名，文件名(非必须)
+const [type, name, fname] = process.argv.splice(2)
+
+// 测试print
+// console.log(1,2,3)
+// print.error('error', '参数二', 33)
+// print.warning('warning', 2)
+// print.info('info')
+// print.success('success')
+
+const typeMaps = {
+  "--pkg": "Package",
+  "--a": "api",
+  "--c": "component",
+  "--ctr": "controller",
+  "--p": "page",
+}
+const needCreations = ['package', "api", "component", "controller", "page"]
+needCreations.map(item => {
+  typeMaps[item] = item
+})
+
+function create(type, name) {
+  if (!type || !name) {
+		print.error('请输入两到三个参数，规则参考Readme')
+		return
+	}
+	// name, fname必须是字母开头
+	const re = /^[a-zA-Z]/
+	if (!re.test(name)) {
+		print.error('包名请用字母开头')
+		return
+	}
+	const realType = typeMaps[type]
+	if (!realType) {
+		print.error('创建的类型输入错误')
+	} else {
+		if (realType === 'Package') {
+			// 创建package
+			print.info(`将为您创建名为${name}的package......`)
+			createPackage && createPackage(name)
+		} else {
+			// 生成api，component, page, controller
+			if (!fname || !re.test(fname)) {
+				print.error('缺少文件名参数或者文件名不合法')
+			} else {
+				print.info(`将为您在package:${name}下创建名为${fname}的${realType}......`)
+				createSpecificType(name, fname, realType)
+			}
+		}
 	}
 }
 
-inquirer.prompt([
-  {
-    type: 'input',
-    name: 'name',
-    message: 'what the name of the new package?',
-  }
-]).then(answers => {
-	const newPackageName = answers.name
-	if (!newPackageName) {
-		console.log('package name is necessary')
-		return
-	}
-	const packageDirs = path.resolve(__dirname, '../packages')
-	log('packageDirs: ', packageDirs)
-	const hasTargetPackage = fs.existsSync(path.join(packageDirs, newPackageName))
-	if (hasTargetPackage) {
-		console.log('package name is repeated')
-		return
-	}
+create(type, name)
 
-	const newPkgDir = path.join(packageDirs, `${newPackageName}`)
 
-	// 创建以newPackageName命名的包(验证包名，先看看validate)
-	fs.mkdirSync(newPkgDir)
 
-	// 返回package特定包下面的特定文件夹或文件路径
-	function getPkgChildPath(...name) {
-	  return path.join(newPkgDir, ...name)
-	}
 
-	// mocks
-	fs.mkdirSync(getPkgChildPath('__mocks__'))
-	fs.writeFileSync(getPkgChildPath('__mocks__', 'index.js'), pkgOperations.mockFileContent)
-
-	// apis
-	fs.mkdirSync(getPkgChildPath('apis'))
-	fs.writeFileSync(getPkgChildPath('apis', 'index.ts'), pkgOperations.apiIndexContent)
-
-	// components
-	fs.mkdirSync(getPkgChildPath('components'))
-	fs.writeFileSync(getPkgChildPath('components', 'index.ts'), pkgOperations.componentIndexContent)
-
-	// controllers
-	fs.mkdirSync(getPkgChildPath('controllers'))
-	fs.writeFileSync(getPkgChildPath('controllers', 'index.ts'), pkgOperations.controllersIndexContent)
-
-	// interfaces
-	fs.mkdirSync(getPkgChildPath('interfaces'))
-	fs.writeFileSync(getPkgChildPath('interfaces', 'index.ts'), '')
-
-	// locales
-	fs.mkdirSync(getPkgChildPath('locales'))
-	fs.writeFileSync(getPkgChildPath('locales', 'index.ts'), pkgOperations.localesIndexContent)
-	fs.writeFileSync(getPkgChildPath('locales', 'en-US.ts'), pkgOperations.localesEnContent)
-	fs.writeFileSync(getPkgChildPath('locales', 'zh-CN.ts'), pkgOperations.localesZhContent)
-
-	// pages
-	fs.mkdirSync(getPkgChildPath('pages'))
-	fs.writeFileSync(getPkgChildPath('pages', 'index.ts'), pkgOperations.pagesIndexContent)
-
-	// router
-	fs.mkdirSync(getPkgChildPath('router'))
-	fs.writeFileSync(getPkgChildPath('router', 'index.ts'), pkgOperations.routerIndexContent)
-
-	// styles
-	fs.mkdirSync(getPkgChildPath('styles'))
-	fs.writeFileSync(getPkgChildPath('styles', `${newPackageName}.module.less`), '')
-
-	// index.ts
-	fs.writeFileSync(getPkgChildPath('index.ts'), pkgOperations.createPkgIndexFileContent(newPackageName))
-
-	// 注册包
-	// to-do
-	console.log(`Creating package ${newPackageName} complete!`)
-})

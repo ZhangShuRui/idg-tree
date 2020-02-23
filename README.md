@@ -15,3 +15,33 @@ yarn
 yarn serve
 ```
 
+## 自动生成新的package/components/page/apis/controllers
+```
+node create type name (fname)
+```
+
+### type取值(--开头的为简写)
+```
+package/--pkg
+apis/--a
+components/--c
+pages/--p
+controllers/--ctr
+```
+
+### name约束（自行命名准确）
+- package: 小写
+- 其他: 开头大写
+
+### 创建包
+```
+yarn run create --pkg a
+```
+
+### 创建api/controller/components/pages
+```
+yarn run create --a pkgname fname
+yarn run create --ctr pkgname fname
+yarn run create --c pkgname fname
+yarn run create --p pkgname fname
+```

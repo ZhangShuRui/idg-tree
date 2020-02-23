@@ -49,15 +49,22 @@ export default apis;
 // components index
 const componentIndexContent = `
 import { Components } from '@idg/idg';
-const components: Components =  {
 
+const components: Components =  {
 };
 
 export default components;
 `
 
 // controllders index
-const controllersIndexContent = commonContent
+const controllersIndexContent = `
+import { Controllers } from '@idg/idg';
+
+const controllers: Controllers = {
+};
+
+export default controllers;
+`
 
 // locales index
 const localesIndexContent = `
@@ -73,13 +80,72 @@ const localesEnContent = commonContent
 const localesZhContent = commonContent
 
 // pages index
-const pagesIndexContent = commonContent
+const pagesIndexContent = `
+import { Pages } from '@idg/idg';
+
+const pages: Pages = {
+};
+
+export default pages;
+`
 
 // router index
 const routerIndexContent = `
 import { Route } from '@idg/idg';
 export const routes: Route[] = [];
 `
+
+// api
+const getApiContent = function (name, fname) {
+	return `
+import { Api } from '@idg/idg';
+export default class extends Api {
+
+}
+`
+}
+// controller
+const getControllerContent = function (name, fname) {
+	return `
+import { Controller } from '@idg/idg';
+export default class extends Controller {
+
+}
+`
+}
+// component
+function getComponentContent(name, fname) {
+	return `
+import { Vue, Component, Prop, Watch, Emit } from 'vue-property-decorator';
+import { Log } from '@idg/idg';
+const TAG = '${name}/components/${fname}';
+@Component({
+})
+export default class ${fname} extends Vue {
+	private render() {
+		return (
+			<div></div>
+		);
+	}
+}
+	`
+}
+// page
+function getPageContent(name, fname) {
+	return `
+import { Vue, Component } from 'vue-property-decorator';
+@Component({
+	depends: []
+})
+export default class ${fname} extends Vue {
+	private render() {
+		return (
+			<div></div>
+		);
+	}
+}
+	`
+}
 
 module.exports = {
 	createPkgIndexFileContent,
@@ -92,4 +158,8 @@ module.exports = {
 	localesZhContent,
 	pagesIndexContent,
 	routerIndexContent,
+	getApiContent,
+	getComponentContent,
+	getControllerContent,
+	getPageContent
 }
