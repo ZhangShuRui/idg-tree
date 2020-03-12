@@ -8,9 +8,9 @@ const pkgOperations = require('./resource/template')
 
 // 类型，包名，文件名(非必须)
 const [type, name, fname] = process.argv.splice(2)
+// console.log(type, name)
 
 // 测试print
-// console.log(1,2,3)
 // print.error('error', '参数二', 33)
 // print.warning('warning', 2)
 // print.info('info')
