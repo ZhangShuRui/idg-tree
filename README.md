@@ -15,9 +15,9 @@ yarn
 yarn serve
 ```
 
-## 自动生成新的package/components/page/apis/controllers
+## 自动生成并注册新的package/components/page/apis/controllers
 ```
-node create type name (fname)
+yarn run create type name (fname)
 ```
 
 ### type取值(--开头的为简写)
