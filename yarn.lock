@@ -626,10 +626,15 @@
   version "1.0.5"
   resolved "http://npm.oneitfarm.com/@idg%2fdesign/-/design-1.0.5.tgz#d74b5c6afd8cb3f8f5d9345a52baec404631ffe0"
 
-"@idg/idg@^2.7.3":
-  version "2.7.3"
-  resolved "http://npm.oneitfarm.com/@idg%2fidg/-/idg-2.7.3.tgz#cca1157d8fd3253d6b39371648ba61a6087caf04"
+"@idg/fastclick@^0.1.1":
+  version "0.1.1"
+  resolved "http://npm.oneitfarm.com/@idg%2ffastclick/-/fastclick-0.1.1.tgz#8232f1d209d0a2e096529a02838b555f7e5ed29f"
+
+"@idg/idg@^2.8.10":
+  version "2.8.10"
+  resolved "http://npm.oneitfarm.com/@idg%2fidg/-/idg-2.8.10.tgz#6777a383fee043a0e64cc42211b8a4b30f51c3a4"
   dependencies:
+    "@idg/fastclick" "^0.1.1"
     core-js "^2.6.5"
     typedoc "^0.15.0"
     vue-class-component "^7.0.2"
@@ -638,7 +643,6 @@
 "@idg/iview@^4.1.15":
   version "4.1.15"
   resolved "https://npm.oneitfarm.com/@idg%2fiview/-/iview-4.1.15.tgz#b96b8c6044d1bf0495eb1d073ed03c56d300c834"
-  integrity sha512-eAOZSgFQYiYYcsYJMtVwSHX14t/aBYUfESqlJlqK1/AIgvB1k7iWWBlUnJcctAa+/qSh5gfTJQlSX3vvOOigZQ==
   dependencies:
     add-dom-event-listener "^1.1.0"
     async-validator "^1.10.0"
@@ -710,7 +714,6 @@
 "@types/color-name@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
-  integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
 
 "@types/events@*":
   version "3.0.0"
@@ -1181,7 +1184,6 @@ ansi-styles@^3.2.0, ansi-styles@^3.2.1:
 ansi-styles@^4.1.0:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-4.2.1.tgz#90ae75c424d008d2624c5bf29ead3177ebfcf359"
-  integrity sha512-9VGjrMsG1vePxcSweQsN20KY/c4zN0h9fLjqAbwbPfahM3t+NL+M9HC8xeXG2I8pX5NoamTGNuomEUFI7fcUjA==
   dependencies:
     "@types/color-name" "^1.1.1"
     color-convert "^2.0.1"
@@ -1844,7 +1846,6 @@ chalk@^2.0.0, chalk@^2.0.1, chalk@^2.3.0, chalk@^2.4.1, chalk@^2.4.2:
 chalk@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-3.0.0.tgz#3f73c2bf526591f574cc492c51e2456349f844e4"
-  integrity sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
@@ -2012,7 +2013,6 @@ color-convert@^1.9.0, color-convert@^1.9.1:
 color-convert@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-2.0.1.tgz#72d3a68d598c9bdb3af2ad1e84f21d896abd4de3"
-  integrity sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==
   dependencies:
     color-name "~1.1.4"
 
@@ -3582,7 +3582,6 @@ has-flag@^3.0.0:
 has-flag@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-4.0.0.tgz#944771fd9c81c81265c4d6941860da06bb59479b"
-  integrity sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
 
 has-symbols@^1.0.0:
   version "1.0.0"
@@ -3822,7 +3821,6 @@ https-browserify@^1.0.0:
 iconv-lite@0.4.24, iconv-lite@^0.4.4:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
-  integrity sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
@@ -5418,7 +5416,6 @@ os-locale@^3.0.0, os-locale@^3.1.0:
 os-tmpdir@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
-  integrity sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
 
 osenv@^0.1.4:
   version "0.1.5"
@@ -7098,7 +7095,6 @@ supports-color@^6.1.0:
 supports-color@^7.1.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-7.1.0.tgz#68e32591df73e25ad1c4b49108a2ec507962bfd1"
-  integrity sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
   dependencies:
     has-flag "^4.0.0"
 

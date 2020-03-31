@@ -3,19 +3,21 @@
 */
 import { Vue, Component, Prop, Watch, Emit } from 'vue-property-decorator';
 const TAG = 'example/components/Hello';
-import styles from '../styles/task.module.less';
 import { Button } from '@idg/iview';
 import { Log } from '@idg/idg';
+
 @Component({
   depends: ['component.TestModal'],
 })
 export default class Hello extends Vue {
   @Prop({}) private x: string;
   private showModal: boolean = false;
-  private created() {
+
+  public created() {
     Log.debug(TAG, 'hello created', this.x);
   }
-  private render() {
+
+  public render() {
     return (
       <div class='flex justify-center items-center'>
         <p class='mr-6'>I'm a component!</p>

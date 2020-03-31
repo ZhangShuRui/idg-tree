@@ -23,7 +23,7 @@
   ],
   "devDependencies": {
     "@idg/design": "^1.0.5",
-    "@idg/idg": "^2.7.3",
+    "@idg/idg": "^2.8.10",
     "@idg/iview": "^4.1.15",
     "@idg/mocker": "^1.0.1",
     "@types/lodash": "^4.14.135",
