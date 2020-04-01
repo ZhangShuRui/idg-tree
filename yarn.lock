@@ -630,6 +630,13 @@
   version "0.1.1"
   resolved "http://npm.oneitfarm.com/@idg%2ffastclick/-/fastclick-0.1.1.tgz#8232f1d209d0a2e096529a02838b555f7e5ed29f"
 
+"@idg/helper@^1.0.2":
+  version "1.0.2"
+  resolved "http://npm.oneitfarm.com/@idg%2fhelper/-/helper-1.0.2.tgz#dc9af9b90d67096928cb679014d38fb03f1ebc9d"
+  integrity sha512-dgsYuROWPGQGNVSi/Sgy2WQ3RuS8ix1n4NvzqJkbx7JQv3XG++LwB6SQUvDWFNmNb1LGc2NBgWBwHvQfurzQ2g==
+  dependencies:
+    chalk "^3.0.0"
+
 "@idg/idg@^2.8.10":
   version "2.8.10"
   resolved "http://npm.oneitfarm.com/@idg%2fidg/-/idg-2.8.10.tgz#6777a383fee043a0e64cc42211b8a4b30f51c3a4"

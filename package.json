@@ -10,7 +10,7 @@
     "pack": "npm run lib && npm run ts",
     "test": "mocha",
     "mock": "cpx  **/__mocks__/*.js  dist",
-    "create": "node script/create"
+    "create": "idg-helper"
   },
   "module": "dist/es/packages/index.js",
   "dependencies": {},
@@ -23,6 +23,7 @@
   ],
   "devDependencies": {
     "@idg/design": "^1.0.5",
+    "@idg/helper": "^1.0.2",
     "@idg/idg": "^2.8.10",
     "@idg/iview": "^4.1.15",
     "@idg/mocker": "^1.0.1",
