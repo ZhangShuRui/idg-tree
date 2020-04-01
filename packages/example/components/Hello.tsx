@@ -3,7 +3,6 @@
 */
 import { Vue, Component, Prop, Watch, Emit } from 'vue-property-decorator';
 const TAG = 'example/components/Hello';
-import styles from '../styles/task.module.less';
 import { Button } from '@idg/iview';
 import { Log } from '@idg/idg';
 import TaskApi from '../apis/TaskApi';
@@ -24,6 +23,7 @@ export default class Hello extends Vue {
       Log.debug(TAG, e);
     }
   }
+
   private render() {
     return (
       <div class='flex justify-center items-center'>
