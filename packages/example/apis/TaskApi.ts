@@ -3,9 +3,9 @@ import {
   Task,
 } from '../interfaces';
 export default class extends Api {
-  public publishTask(data: Task ) {
+  public publishTask(data?: Task ) {
     return this.request({
-      url: '/index.php/teacher/task/add',
+      url: '/index.php/test',
       method: 'post',
       data,
     });

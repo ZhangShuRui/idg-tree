@@ -6,14 +6,23 @@ const TAG = 'example/components/Hello';
 import styles from '../styles/task.module.less';
 import { Button } from '@idg/iview';
 import { Log } from '@idg/idg';
+import TaskApi from '../apis/TaskApi';
 @Component({
-  depends: ['component.TestModal'],
+  depends: ['component.TestModal', 'api.TaskApi'],
 })
 export default class Hello extends Vue {
   @Prop({}) private x: string;
+  private taskApi: TaskApi;
   private showModal: boolean = false;
-  private created() {
+  private async created() {
     Log.debug(TAG, 'hello created', this.x);
+    // 接口调用示范
+    try {
+      const res = await this.taskApi.publishTask();
+      Log.debug(TAG, res);
+    } catch (e) {
+      Log.debug(TAG, e);
+    }
   }
   private render() {
     return (

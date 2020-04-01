@@ -3,7 +3,7 @@
 const Mock = require('mockjs');
 
 module.exports = {
-  'POST /index.php/teacher/task/getList': function (req, res) {
+  'POST /index.php/test': function (req, res) {
     res.send({
       state: 1,
       data: Mock.mock({
