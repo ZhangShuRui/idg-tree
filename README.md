@@ -15,9 +15,16 @@ yarn
 yarn serve
 ```
 
+## 打包
+注意如果项目依赖了图片，视频等需要参考(yarn run ts命令)
+```
+cpx packages/**/*.less dist/es/packages
+```
+将依赖拷贝到dist/es/packages下面。
+
 ## 自动生成并注册新的package/components/page/apis/controllers
 ```
-yarn run create type name (fname)
+yarn run generate type name (fname)
 ```
 
 ### type取值(--开头的为简写)
@@ -35,13 +42,13 @@ controllers/--ctr
 
 ### 创建包
 ```
-yarn run create --pkg a
+yarn run generate --pkg a
 ```
 
-### 创建api/controller/components/pages
+### 创建api/controller/components/pages(pkgname包名，fname文件名)
 ```
-yarn run create --a pkgname fname
-yarn run create --ctr pkgname fname
-yarn run create --c pkgname fname
-yarn run create --p pkgname fname
+yarn run generate --a pkgname fname
+yarn run generate --ctr pkgname fname
+yarn run generate --c pkgname fname
+yarn run generate --p pkgname fname
 ```

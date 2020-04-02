@@ -10,10 +10,11 @@
     "pack": "npm run lib && npm run ts",
     "test": "mocha",
     "mock": "cpx  **/__mocks__/*.js  dist",
-    "create": "idg-helper"
+    "generate": "idg-helper"
   },
   "module": "dist/es/packages/index.js",
-  "dependencies": {},
+  "dependencies": {
+  },
   "main": "dist/main.common.js",
   "typings": "dist/es/packages/index.d.ts",
   "files": [
