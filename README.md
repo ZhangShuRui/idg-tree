@@ -20,35 +20,34 @@ yarn serve
 ```
 cpx packages/**/*.less dist/es/packages
 ```
-将依赖拷贝到dist/es/packages下面。
+将依赖拷贝到dist/es/packages下面
+
+
 
 ## 自动生成并注册新的package/components/page/apis/controllers
-```
-yarn run generate type name (fname)
-```
 
-### type取值(--开头的为简写)
+### type取值(--或者-开头的为简写)
 ```
-package/--pkg
-apis/--a
-components/--c
-pages/--p
-controllers/--ctr
+--pkg/-pkg 代表package
+--a/-a 代表api
+--c/-c  代表components
+--p/-p 代表page
+--ctr/-ctr 代表controllers
 ```
 
 ### name约束（自行命名准确）
 - package: 小写
 - 其他: 开头大写
 
+
 ### 创建包
 ```
-yarn run generate --pkg a
+yarn run generate pkgname
 ```
 
-### 创建api/controller/components/pages(pkgname包名，fname文件名)
+### 创建api/controller/components/pages(如果不存在pkgname的包会先生成)
 ```
-yarn run generate --a pkgname fname
-yarn run generate --ctr pkgname fname
-yarn run generate --c pkgname fname
-yarn run generate --p pkgname fname
+yarn run generate pkgname -a AdminApi -c Admin -p AdminPage AdminLoginPage -ctr AdminController
 ```
+
+#### -a,-p,-c,-ctr后面可带任意多个参数，文件名开头请大写

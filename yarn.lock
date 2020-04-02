@@ -630,10 +630,10 @@
   version "0.1.1"
   resolved "http://npm.oneitfarm.com/@idg%2ffastclick/-/fastclick-0.1.1.tgz#8232f1d209d0a2e096529a02838b555f7e5ed29f"
 
-"@idg/helper@^1.0.2":
-  version "1.0.2"
-  resolved "http://npm.oneitfarm.com/@idg%2fhelper/-/helper-1.0.2.tgz#dc9af9b90d67096928cb679014d38fb03f1ebc9d"
-  integrity sha512-dgsYuROWPGQGNVSi/Sgy2WQ3RuS8ix1n4NvzqJkbx7JQv3XG++LwB6SQUvDWFNmNb1LGc2NBgWBwHvQfurzQ2g==
+"@idg/helper@^2.0.0":
+  version "2.0.0"
+  resolved "http://npm.oneitfarm.com/@idg%2fhelper/-/helper-2.0.0.tgz#e9c04f9188c152f2abcc7f03f2851151ce74b48e"
+  integrity sha512-qxHyuVueJYG4NWay5o71QbYVtrkHWj4zsUF34KgzfHDneHLexNfkPgE736NC273iqcuEaHgPHIeH9xLgmCD7vw==
   dependencies:
     chalk "^3.0.0"
 
@@ -3840,13 +3840,6 @@ icss-utils@^2.1.0:
   resolved "https://npm.oneitfarm.com/icss-utils/-/icss-utils-2.1.0.tgz#83f0a0ec378bf3246178b6c2ad9136f135b1c962"
   dependencies:
     postcss "^6.0.1"
-
-idg-helper@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/idg-helper/-/idg-helper-1.0.2.tgz#f954a3c59dac86e580f3ea5eded293f6c8c58c36"
-  integrity sha512-ToUprRC3K4++9ZiTHa0cRzoSQWRJdjHXWYrM7Pae3+FuE44Br0Pwc5uu+1ahgydGr7vAPpZzdlgydecSyO/jEg==
-  dependencies:
-    chalk "^3.0.0"
 
 ieee754@^1.1.4:
   version "1.1.13"
