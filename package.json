@@ -23,7 +23,7 @@
   ],
   "devDependencies": {
     "@idg/design": "^1.0.5",
-    "@idg/helper": "^2.0.0",
+    "@idg/helper": "^3.0.0",
     "@idg/idg": "^2.8.10",
     "@idg/iview": "^4.1.15",
     "@idg/mocker": "^1.0.1",

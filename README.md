@@ -47,7 +47,7 @@ yarn run generate pkgname
 
 ### 创建api/controller/components/pages(如果不存在pkgname的包会先生成)
 ```
-yarn run generate pkgname -a AdminApi -c Admin -p AdminPage AdminLoginPage -ctr AdminController
+yarn run generate pkgname -a AdminApi -c Admin -p AdminPage AdminLoginPage -ctr AdminController -pr AdminTest
 ```
 
-#### -a,-p,-c,-ctr后面可带任意多个参数，文件名开头请大写
+#### -a,-p,-c,-ctr, -pr后面可带任意多个参数，文件名开头请大写;-pr添加及注册页面的同时会以当前页面名称增加一个路由;
