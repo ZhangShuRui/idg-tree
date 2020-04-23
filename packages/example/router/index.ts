@@ -1,6 +1,6 @@
 import { Route } from '@idg/idg';
 const Test: Route = {
-  path: '/test',
+  path: '/',
   name: 'test',
   page: 'Test',
 };
