@@ -622,6 +622,10 @@
   dependencies:
     "@hapi/hoek" "8.x.x"
 
+"@idg/cli-config@^0.0.22":
+  version "0.0.22"
+  resolved "http://npm.oneitfarm.com/@idg%2fcli-config/-/cli-config-0.0.22.tgz#01861157cf20adf0161fa99a6edfee6f06a3adc3"
+
 "@idg/design@^1.0.5":
   version "1.0.5"
   resolved "http://npm.oneitfarm.com/@idg%2fdesign/-/design-1.0.5.tgz#d74b5c6afd8cb3f8f5d9345a52baec404631ffe0"
@@ -633,14 +637,13 @@
 "@idg/helper@^3.0.0":
   version "3.0.0"
   resolved "http://npm.oneitfarm.com/@idg%2fhelper/-/helper-3.0.0.tgz#f72a45b472c9c086c6f4d27fe92a33a7dd57a6f8"
-  integrity sha512-wavm1YOrbBkRPqSq252cCJiKnxL1tgucuhM2b0Mg76ogBvbRclj/ZGX+lxPjp0WQ8ibiiJj/NEvw2w14vItaNw==
   dependencies:
     chalk "^3.0.0"
     ejs "^3.0.2"
 
-"@idg/idg@^2.8.10":
-  version "2.8.10"
-  resolved "http://npm.oneitfarm.com/@idg%2fidg/-/idg-2.8.10.tgz#6777a383fee043a0e64cc42211b8a4b30f51c3a4"
+"@idg/idg@^2.8.11":
+  version "2.8.11"
+  resolved "http://npm.oneitfarm.com/@idg%2fidg/-/idg-2.8.11.tgz#c6fa491ea7028aedec1dc97075ecdf023b9983b9"
   dependencies:
     "@idg/fastclick" "^0.1.1"
     core-js "^2.6.5"
@@ -2910,7 +2913,6 @@ ejs@^2.6.1:
 ejs@^3.0.2:
   version "3.0.2"
   resolved "http://npm.oneitfarm.com/ejs/-/ejs-3.0.2.tgz#745b01cdcfe38c1c6a2da3bbb2d9957060a31226"
-  integrity sha1-dFsBzc/jjBxqLaO7stmVcGCjEiY=
 
 electron-to-chromium@^1.3.247:
   version "1.3.264"
