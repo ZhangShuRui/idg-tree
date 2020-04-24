@@ -5,6 +5,8 @@ import Vue from 'vue';
 import '@idg/iview/dist/styles/ant.css';
 import './init.less';
 import packages from '../packages/packages';
+// 开发应用打开注释 引入账号服务
+// import AccountService from '@idg/account'
 
 const appid = 'v4tnxcagazspw32hrofsdmorfup8djyq';
 
@@ -13,6 +15,7 @@ Vue.use(iview);
 class MyApp extends App {
   constructor() {
     const children: Service[] = [
+      // 开发应用打开注释 引入账号服务
       // new AccountService({
       //   channelAlias: 'default',
       // }),
@@ -24,7 +27,7 @@ class MyApp extends App {
     });
   }
 
-  // 开发服务打开注释
+  // 开发服务打开注释，设置用户token
   // public getBaseURL() {
   //   if (window.USE_MOCK) {
   //       return '';
@@ -36,4 +39,5 @@ class MyApp extends App {
 
 const app = new MyApp();
 app.startup();
-
+// 开发服务打开注释，设置用户token
+// app.auth.setToken('sdfsdfsdf')
