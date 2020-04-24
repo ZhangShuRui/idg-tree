@@ -32,7 +32,7 @@ class MyApp extends App {
   //   if (window.USE_MOCK) {
   //       return '';
   //   } else {
-  //       return this.getProxyURL();
+  //       return this.getServerHost();
   //   }
   // }
 }
