@@ -35,6 +35,12 @@ class MyApp extends App {
   //       return this.getServerHost();
   //   }
   // }
+
+  
+  // 开发应用打开注释，设置用户token
+  // public getProxyURL() {
+  //   return this.getServerHost() + 'main.php/json/proxy/call?url='
+  // }
 }
 
 const app = new MyApp();
