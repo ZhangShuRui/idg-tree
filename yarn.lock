@@ -622,9 +622,12 @@
   dependencies:
     "@hapi/hoek" "8.x.x"
 
-"@idg/cli-config@^0.0.22":
-  version "0.0.22"
-  resolved "http://npm.oneitfarm.com/@idg%2fcli-config/-/cli-config-0.0.22.tgz#01861157cf20adf0161fa99a6edfee6f06a3adc3"
+"@idg/cli-config@^1.0.1":
+  version "1.0.1"
+  resolved "http://npm.oneitfarm.com/@idg%2fcli-config/-/cli-config-1.0.1.tgz#e3bf7dd7c5c8fdc0ea86ff86308a6787f450a8ed"
+  dependencies:
+    lodash "^4.17.15"
+    read-pkg "^5.2.0"
 
 "@idg/design@^1.0.5":
   version "1.0.5"
@@ -6487,7 +6490,7 @@ read-pkg@^3.0.0:
     normalize-package-data "^2.3.2"
     path-type "^3.0.0"
 
-read-pkg@^5.1.1:
+read-pkg@^5.1.1, read-pkg@^5.2.0:
   version "5.2.0"
   resolved "http://npm.oneitfarm.com/read-pkg/-/read-pkg-5.2.0.tgz#7bf295438ca5a33e56cd30e053b34ee7250c93cc"
   dependencies:

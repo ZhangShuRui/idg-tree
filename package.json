@@ -22,7 +22,7 @@
     "types"
   ],
   "devDependencies": {
-    "@idg/cli-config": "^0.0.22",
+    "@idg/cli-config": "^1.0.1",
     "@idg/design": "^1.0.5",
     "@idg/helper": "^3.0.0",
     "@idg/idg": "^2.8.11",
