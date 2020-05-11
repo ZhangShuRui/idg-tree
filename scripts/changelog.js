@@ -57,7 +57,7 @@ function generateChangelog() {
   
   const [major, minor, patch] = version.split('.')
   const versions = {
-    major: `${Number(major)}.${0}.${0}`, // 主版本号
+    major: `${Number(major) + 1}.${0}.${0}`, // 主版本号
     minor: `${major}.${Number(minor) + 1}.${0}`, // 次版本号
     patch: `${major}.${minor}.${Number(patch) + 1}` // 修补版本号
   }
