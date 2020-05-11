@@ -1,6 +1,6 @@
 {
   "name": "@idg/seed",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --report",
@@ -54,6 +54,7 @@
     "nyc": "^14.1.1",
     "register-service-worker": "^1.6.2",
     "tailwindcss": "^1.1.4",
+    "tempfile": "^3.0.0",
     "typescript": "^3.4.3",
     "vue": "^2.6.10",
     "vue-class-component": "^7.1.0",

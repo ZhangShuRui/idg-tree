@@ -8546,11 +8546,22 @@ tar@^4:
     safe-buffer "^5.1.2"
     yallist "^3.0.3"
 
+temp-dir@^2.0.0:
+  version "2.0.0"
+  resolved "http://npm.oneitfarm.com/temp-dir/-/temp-dir-2.0.0.tgz#bde92b05bdfeb1516e804c9c00ad45177f31321e"
+
 temp@^0.9.0:
   version "0.9.1"
   resolved "http://npm.oneitfarm.com/temp/-/temp-0.9.1.tgz#2d666114fafa26966cd4065996d7ceedd4dd4697"
   dependencies:
     rimraf "~2.6.2"
+
+tempfile@^3.0.0:
+  version "3.0.0"
+  resolved "http://npm.oneitfarm.com/tempfile/-/tempfile-3.0.0.tgz#5376a3492de7c54150d0cc0612c3f00e2cdaf76c"
+  dependencies:
+    temp-dir "^2.0.0"
+    uuid "^3.3.2"
 
 terser-webpack-plugin@^1.4.1:
   version "1.4.1"
