@@ -34,3 +34,12 @@
 
 
 
+## [0.1.1](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/compare/0.1.0...0.1.1) (2020-05-11)
+
+
+### Features
+
+* **git:** push tags ([f5e5b75](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/f5e5b75743830e66cbc09d0e0eb1a536e5e2f555))
+
+
+
