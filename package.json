@@ -1,6 +1,6 @@
 {
   "name": "@idg/seed",
-  "version": "0.0.6",
+  "version": "0.0.1",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --report",
