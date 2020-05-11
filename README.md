@@ -7,12 +7,23 @@
 - css库文档 https://tailwindcss.com/
 
 ## 开发
-```
+``` bash
 // install
 yarn
 
 // start dev server
 yarn serve
+```
+
+## 提交
+``` bash
+git add .
+yarn commit
+```
+
+## 生成更新日志
+``` bash
+yarn changelog
 ```
 
 ## 打包

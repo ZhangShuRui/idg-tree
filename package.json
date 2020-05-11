@@ -10,7 +10,9 @@
     "pack": "npm run lib && npm run ts",
     "test": "mocha",
     "mock": "cpx  **/__mocks__/*.js  dist",
-    "generate": "idg-helper"
+    "generate": "idg-helper",
+    "commit": "git-cz",
+    "changelog": "node ./scripts/changelog.js"
   },
   "module": "dist/es/packages/index.js",
   "dependencies": {},
@@ -22,6 +24,8 @@
     "types"
   ],
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@idg/cli-config": "^1.0.1",
     "@idg/design": "^1.0.5",
     "@idg/helper": "^3.0.0",
@@ -36,7 +40,11 @@
     "axios": "^0.19.0",
     "babel-core": "7.0.0-bridge.0",
     "chalk": "^3.0.0",
+    "commitizen": "^4.1.2",
+    "conventional-changelog": "^3.1.21",
     "cpx": "^1.5.0",
+    "cz-customizable": "^6.2.0",
+    "husky": "^4.2.5",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "localforage": "^1.7.3",
@@ -54,6 +62,16 @@
     "vue-router": "^3.0.7",
     "vue-template-compiler": "^2.6.10",
     "vuex": "^3.1.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "license": "MIT"
 }
