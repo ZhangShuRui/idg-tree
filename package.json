@@ -31,7 +31,7 @@
     "@idg/design": "^1.0.5",
     "@idg/helper": "^3.0.0",
     "@idg/idg": "^2.8.17",
-    "@idg/iview": "^4.1.15",
+    "@idg/iview": "^4.1.24",
     "@idg/mocker": "^1.0.1",
     "@types/lodash": "^4.14.135",
     "@vue/cli-plugin-babel": "^3.8.0",

@@ -775,9 +775,9 @@
     vue-class-component "^7.0.2"
     vue-property-decorator "^8.1.0"
 
-"@idg/iview@^4.1.15":
-  version "4.1.15"
-  resolved "https://npm.oneitfarm.com/@idg%2fiview/-/iview-4.1.15.tgz#b96b8c6044d1bf0495eb1d073ed03c56d300c834"
+"@idg/iview@^4.1.24":
+  version "4.1.24"
+  resolved "http://npm.oneitfarm.com/@idg%2fiview/-/iview-4.1.24.tgz#80853b7027530e562384da56c8cf2a48f2d93058"
   dependencies:
     add-dom-event-listener "^1.1.0"
     async-validator "^1.10.0"
