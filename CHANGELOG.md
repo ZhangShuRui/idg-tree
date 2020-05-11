@@ -34,7 +34,7 @@
 
 ### Features
 
-* **lint:** 不能console,不能无用的声明或变量,不能有console ([f4576d1](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/f4576d142283f4d816e4d79c81fa3551b44986e7))
+* **lint:** 不能无用的声明或变量,不能有console ([f4576d1](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/f4576d142283f4d816e4d79c81fa3551b44986e7))
 
 
 
