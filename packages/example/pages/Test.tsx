@@ -1,7 +1,7 @@
 /*
   example模块是示例代码，请勿直接在上面开发，可以使用yarn run generate --pkg pkgname命令来生成package，详见README
 */
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import { Vue, Component } from 'vue-property-decorator';
 import { Card } from '@idg/iview';
 
 @Component({

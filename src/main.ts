@@ -1,5 +1,5 @@
 import './init';
-import { App, Service, Log, Idg, Package, Route } from '@idg/idg';
+import { App, Service } from '@idg/idg';
 import iview from '@idg/iview';
 import Vue from 'vue';
 import '@idg/iview/dist/styles/ant.css';
