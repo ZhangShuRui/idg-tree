@@ -46,14 +46,9 @@ if (process.env.CHANGELOG_TYPE) {
 }
 
 
-function convertDate(date) {
-  if (Number(date) < 10) {
-    return `0${date}`
-  } else {
-    return date
-  }
-}
-
+/**
+ * 生成日志
+ **/
 function generateChangelog() {
   const logDir = path.resolve(__dirname, '../') // changelog所在目录
   
@@ -65,30 +60,32 @@ function generateChangelog() {
   }
   
   versionOut = versions[versionType] // 最终生成的md文件版本号
-  
   logPath = `${logDir}/CHANGELOG.md`
+  replaceVersion()
+
   generate({
     preset: 'angular',
     outfile: logPath,
     // outputUnreleased: 1,
     releaseCount: 0
-  }, replace)
+  }, commit)
 }
 
-function replace () {
+/**
+ * 替换package.json的版本号
+ **/
+function replaceVersion () {
   const log = fs.readFileSync(logPath, { encoding: 'utf-8'})
   console.log('replace start', log)
-  const date = new Date()
-  const today = `${date.getFullYear()}-${convertDate(date.getMonth()+1)}-${convertDate(date.getDate())}`
-  const replaceStr = `### ${versionType[0].toLocaleUpperCase() + versionType.substring(1)}${versionOut} (${today})`
-  const titleReplaced = log.replace(/^(.*)$/m, replaceStr)
   fs.writeFileSync(logPath, log, { encoding: 'utf-8' })
   const pkgJson = fs.readFileSync(jsonPath, { encoding: 'utf-8' })
   const replacedPkgJson = pkgJson.replace(`"version": "${version}"`, `"version": "${versionOut}"`)
   fs.writeFileSync(jsonPath, replacedPkgJson, { encoding: 'utf-8' })
-  commit(versionOut)
 }
 
+/**
+ * 提交并push到master分支
+ **/
 function commit (version) {
   console.log('commit changelog to master')
   const cp = require('child_process')
