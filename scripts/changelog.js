@@ -43,7 +43,6 @@ if (process.env.CHANGELOG_TYPE) {
     }
   ]).then(ans=>{
     versionType = ans.versionType
-    fetch()
     generateChangelog()
   })
 }
@@ -53,6 +52,7 @@ if (process.env.CHANGELOG_TYPE) {
  * 生成日志
  **/
 function generateChangelog() {
+  fetch()
   const logDir = path.resolve(__dirname, '../') // changelog所在目录
   
   const [major, minor, patch] = version.split('.')
@@ -91,7 +91,7 @@ function replaceVersion () {
 /**
  * 获取远程仓库
  **/
-function fetch (version) {
+function fetch () {
   console.log('fetch origin tags')
   const cp = require('child_process')
   cp.execSync('git fetch')
@@ -218,11 +218,16 @@ function generate(flags, cb) {
       });
 
     if (sameFile) {
+      console.log('sameFile')
       if (options.append) {
         changelogStream
           .pipe(fs.createWriteStream(outfile, {
             flags: 'a'
-          }));
+          }))
+          .on('finish', function () {
+            cb()
+            console.log('finish pipe')
+          });;
       } else {
         var tmp = tempfile();
 
