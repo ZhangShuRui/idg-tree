@@ -69,6 +69,7 @@ function generateChangelog() {
   generate({
     preset: 'angular',
     outfile: logPath,
+    infile: logPath,
     outputUnreleased: 1,
     releaseCount: 1,
     append: true
