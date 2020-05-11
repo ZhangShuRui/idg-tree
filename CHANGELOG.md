@@ -15,8 +15,8 @@
 
 ### Features
 
-* **commit:** lint check before commit ([5dc3c5a](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/5dc3c5a8cb1ff3b1ae48f7cb52f21d5c066bbf19))
-* **lint:** 默认lint等级error,commit前先自动lint ([6e0d3ce](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/6e0d3ceff396a3e4e93688bf1702589acf418390))
+* **commit:** commit前先自动lint ([5dc3c5a](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/5dc3c5a8cb1ff3b1ae48f7cb52f21d5c066bbf19))
+* **lint:** 默认lint等级error ([6e0d3ce](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/6e0d3ceff396a3e4e93688bf1702589acf418390))
 
 
 
