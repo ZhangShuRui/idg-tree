@@ -28,7 +28,6 @@ cpx packages/**/*.less dist/es/packages
 
 ### type取值(--或者-开头的为简写)
 ```
---pkg/-pkg 代表package
 --a/-a 代表api
 --c/-c  代表components
 --p/-p 代表page
@@ -50,4 +49,4 @@ yarn run generate pkgname
 yarn run generate pkgname -a AdminApi -c Admin -p AdminPage AdminLoginPage -ctr AdminController -pr AdminTest
 ```
 
-#### -a,-p,-c,-ctr, -pr后面可带任意多个参数，文件名开头请大写;-pr添加及注册页面的同时会以当前页面名称增加一个路由;
+#### -a,-p,-c,-ctr, -pr后面可带任意多个参数，文件名开头请大写;-pr添加及注册页面的同时会以当前页面名称增加一个路由(路由名称自行修改);

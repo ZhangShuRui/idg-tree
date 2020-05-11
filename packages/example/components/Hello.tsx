@@ -1,5 +1,5 @@
 /*
-  example模块是示例代码，请勿直接在上面开发，可以使用yarn run generate --pkg pkgname命令来生成package，详见README
+  example模块是示例代码，请勿直接在上面开发，可以使用yarn run generate pkgname命令来生成package，详见README
 */
 import { Vue, Component, Prop, Watch, Emit } from 'vue-property-decorator';
 const TAG = 'example/components/Hello';
