@@ -108,6 +108,7 @@ function commit (version) {
   cp.execSync('git pull origin master')
   cp.execSync('git add .')
   cp.execSync(`git commit -a -m 'upgrade: ${version}'`)
+  cp.execSync(`git tag ${version}`)
   cp.execSync(`git push origin master`)
   console.log('push success')
 }
