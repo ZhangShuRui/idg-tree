@@ -1,6 +1,6 @@
 // cz-customizable配置文件
 
-const subjectLimit = 50
+const subjectLimit = 500
 
 module.exports = {
   types: [
