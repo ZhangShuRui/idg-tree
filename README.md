@@ -22,6 +22,7 @@ yarn commit
 ```
 
 ## 生成更新日志
+<strong>只有master能够执行</strong>
 ``` bash
 yarn changelog
 ```
