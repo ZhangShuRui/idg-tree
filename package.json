@@ -4,7 +4,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --report",
-    "lint": "vue-cli-service lint",
+    "lint": "tslint 'packages/**/*.ts' 'packages/**/*.ts'",
     "ts": "tsc && cpx packages/**/*.less dist/es/packages && cpx packages/**/*.png dist/es/packages",
     "lib": "vue-cli-service build --target lib --name IdgSeed --filename main --entry packages/index.ts --report",
     "pack": "npm run lib && npm run ts",
@@ -12,7 +12,8 @@
     "mock": "cpx  **/__mocks__/*.js  dist",
     "generate": "idg-helper",
     "commit": "git-cz",
-    "changelog": "node ./scripts/changelog.js"
+    "changelog": "node ./scripts/changelog.js",
+    "precommit": "npm run lint"
   },
   "module": "dist/es/packages/index.js",
   "dependencies": {},
@@ -55,6 +56,7 @@
     "register-service-worker": "^1.6.2",
     "tailwindcss": "^1.1.4",
     "tempfile": "^3.0.0",
+    "tslint": "^6.1.2",
     "typescript": "^3.4.3",
     "vue": "^2.6.10",
     "vue-class-component": "^7.1.0",
@@ -71,8 +73,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "lint": "yarn lint"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "license": "MIT"
