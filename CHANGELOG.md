@@ -1,9 +1,10 @@
-## 0.0.2 (2020-05-11)
+## 0.0.3 (2020-05-11)
 
 
 ### Bug Fixes
 
 * **a:** test ([c10273e](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/c10273efba32eb58ebb659aeb3e6d3a13715d52f))
+* **s:** commit versioln ([9e2b945](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/9e2b9454250673d4288f5482813b175d2a0702e2))
 * **s:** dsf ([e36feda](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/e36feda4f6982b43b62e6f0ae643b75c5027af4c))
 * **sdf:** sdfsa ([60d7d73](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/60d7d73edac28a8a8f7f32a68cd1c728dd2bb1c6))
 
