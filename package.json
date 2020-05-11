@@ -1,16 +1,19 @@
 {
   "name": "@idg/seed",
-  "version": "0.0.1",
+  "version": "1.1.2",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --report",
-    "lint": "vue-cli-service lint",
-    "ts": "tsc && cpx packages/**/*.less dist/es/packages",
+    "lint": "tslint 'packages/**/*.ts' 'packages/**/*.ts'",
+    "ts": "tsc && cpx packages/**/*.less dist/es/packages && cpx packages/**/*.png dist/es/packages",
     "lib": "vue-cli-service build --target lib --name IdgSeed --filename main --entry packages/index.ts --report",
     "pack": "npm run lib && npm run ts",
     "test": "mocha",
     "mock": "cpx  **/__mocks__/*.js  dist",
-    "generate": "idg-helper"
+    "generate": "idg-helper",
+    "commit": "git-cz",
+    "changelog": "node ./scripts/changelog.js",
+    "precommit": "npm run lint"
   },
   "module": "dist/es/packages/index.js",
   "dependencies": {},
@@ -22,10 +25,13 @@
     "types"
   ],
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@idg/cli-config": "^1.0.2",
     "@idg/design": "^1.0.5",
     "@idg/helper": "^3.0.4",
-    "@idg/idg": "^2.8.10",
-    "@idg/iview": "^4.1.15",
+    "@idg/idg": "^2.8.17",
+    "@idg/iview": "^4.1.24",
     "@idg/mocker": "^1.0.1",
     "@types/lodash": "^4.14.135",
     "@vue/cli-plugin-babel": "^3.8.0",
@@ -35,7 +41,11 @@
     "axios": "^0.19.0",
     "babel-core": "7.0.0-bridge.0",
     "chalk": "^3.0.0",
+    "commitizen": "^4.1.2",
+    "conventional-changelog": "^3.1.21",
     "cpx": "^1.5.0",
+    "cz-customizable": "^6.2.0",
+    "husky": "^4.2.5",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "localforage": "^1.7.3",
@@ -45,6 +55,8 @@
     "nyc": "^14.1.1",
     "register-service-worker": "^1.6.2",
     "tailwindcss": "^1.1.4",
+    "tempfile": "^3.0.0",
+    "tslint": "^6.1.2",
     "typescript": "^3.4.3",
     "vue": "^2.6.10",
     "vue-class-component": "^7.1.0",
@@ -53,6 +65,16 @@
     "vue-router": "^3.0.7",
     "vue-template-compiler": "^2.6.10",
     "vuex": "^3.1.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "license": "MIT"
 }

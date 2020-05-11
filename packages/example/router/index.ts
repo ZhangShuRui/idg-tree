@@ -1,7 +1,7 @@
 import { Route } from '@idg/idg';
 const Test: Route = {
-  path: '/test',
-  name: 'test',
+  path: '/',
+  name: 'index',
   page: 'Test',
 };
 export const routes = [

@@ -1,7 +1,7 @@
 import { Api , ERROR_RESPONSE_FORMAT, NetworkError} from '@idg/idg';
 import { AxiosResponse } from 'axios';
 
-// tslint:disable-next-line:only-arrow-functions
+// tslint:disable-next-line
 Api.prototype.responseHandler = function(response: AxiosResponse): any {
   if (!response.data) {
     return Promise.reject(new NetworkError(ERROR_RESPONSE_FORMAT, 'no data'));

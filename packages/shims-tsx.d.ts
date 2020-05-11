@@ -7,16 +7,19 @@ declare global {
     // tslint:disable no-empty-interface
     interface ElementClass extends Vue {}
     interface IntrinsicElements {
+      // tslint:disable no-any
       [elem: string]: any;
     }
   }
   interface Window {
+    // tslint:disable no-any
     [propsName: string]: any;
   }
 }
 
-declare module "vue/types/options" {
+declare module 'vue/types/options' {
   interface ComponentOptions<V extends Vue> {
+    // tslint:disable no-any
     [propName: string]: any;
     ref?: string;
   }

@@ -1,7 +1,7 @@
 /*
   example模块是示例代码，请勿直接在上面开发，可以使用yarn run generate pkgname命令来生成package，详见README
 */
-import { Vue, Component, Prop, Watch, Emit } from 'vue-property-decorator';
+import { Vue, Component, Prop } from 'vue-property-decorator';
 const TAG = 'example/components/Hello';
 import { Button } from '@idg/iview';
 import { Log } from '@idg/idg';
@@ -13,7 +13,7 @@ export default class Hello extends Vue {
   @Prop({}) private x: string;
   private taskApi: TaskApi;
   private showModal: boolean = false;
-  private async created() {
+  public async created() {
     Log.debug(TAG, 'hello created', this.x);
     // 接口调用示范
     try {
@@ -24,7 +24,7 @@ export default class Hello extends Vue {
     }
   }
 
-  private render() {
+  public render() {
     return (
       <div class='flex justify-center items-center'>
         <p class='mr-6'>I'm a component!</p>
