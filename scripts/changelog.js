@@ -55,7 +55,7 @@ function convertDate(date) {
 }
 
 function generateChangelog() {
-  const logDir = path.resolve(__dirname, './') // changelog所在目录
+  const logDir = path.resolve(__dirname, '../') // changelog所在目录
   
   const [major, minor, patch] = version.split('.')
   const versions = {
