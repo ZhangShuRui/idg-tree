@@ -20,3 +20,12 @@
 
 
 
+## [1.1.1](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/compare/1.1.0...1.1.1) (2020-05-11)
+
+
+### Features
+
+* **lint:** init删掉默认CHANGELOG, 加入no-any规则 ([ffc5837](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/ffc5837be5d70dc55fbd98ca53f5492484eac626))
+
+
+
