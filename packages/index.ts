@@ -1,5 +1,5 @@
 import { Service, ChannelOptions } from '@idg/idg';
-import packages from './packages';
+import packages from './packages'
 /* import UcenterService from '@idg/ucenter'; */
 
 export default class TemplateService extends Service {

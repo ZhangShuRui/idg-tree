@@ -743,9 +743,9 @@
   dependencies:
     "@hapi/hoek" "8.x.x"
 
-"@idg/cli-config@^1.0.1":
-  version "1.0.1"
-  resolved "http://npm.oneitfarm.com/@idg%2fcli-config/-/cli-config-1.0.1.tgz#e3bf7dd7c5c8fdc0ea86ff86308a6787f450a8ed"
+"@idg/cli-config@^1.0.2":
+  version "1.0.2"
+  resolved "http://npm.oneitfarm.com/@idg%2fcli-config/-/cli-config-1.0.2.tgz#463f9ca944980467adf381f84cc9d89567a45a8e"
   dependencies:
     lodash "^4.17.15"
     read-pkg "^5.2.0"
@@ -765,9 +765,9 @@
     chalk "^3.0.0"
     ejs "^3.0.2"
 
-"@idg/idg@^2.8.11":
-  version "2.8.11"
-  resolved "http://npm.oneitfarm.com/@idg%2fidg/-/idg-2.8.11.tgz#c6fa491ea7028aedec1dc97075ecdf023b9983b9"
+"@idg/idg@^2.8.17":
+  version "2.8.17"
+  resolved "http://npm.oneitfarm.com/@idg%2fidg/-/idg-2.8.17.tgz#78ca718af44a500e378a51a1e7d6910f8ec7a26f"
   dependencies:
     "@idg/fastclick" "^0.1.1"
     core-js "^2.6.5"

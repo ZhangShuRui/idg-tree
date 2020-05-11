@@ -26,10 +26,10 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@idg/cli-config": "^1.0.1",
+    "@idg/cli-config": "^1.0.2",
     "@idg/design": "^1.0.5",
     "@idg/helper": "^3.0.0",
-    "@idg/idg": "^2.8.11",
+    "@idg/idg": "^2.8.17",
     "@idg/iview": "^4.1.15",
     "@idg/mocker": "^1.0.1",
     "@types/lodash": "^4.14.135",
@@ -71,7 +71,8 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "lint": "yarn lint"
     }
   },
   "license": "MIT"
