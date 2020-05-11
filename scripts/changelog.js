@@ -15,6 +15,9 @@ if (process.env.CHANGELOG_TYPE) {
   versionType = process.env.CHANGELOG_TYPE
   generateChangelog()
 } else {
+  /**
+   * 获取用户选项
+   **/
   inquirer.prompt([
     {
       name : 'versionType',
