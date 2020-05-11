@@ -1,4 +1,9 @@
-## 0.0.6 (2020-05-11)
+## 0.0.2 (2020-05-11)
+
+
+### Bug Fixes
+
+* **a:** test ([c10273e](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/c10273efba32eb58ebb659aeb3e6d3a13715d52f))
 
 
 ### Features
