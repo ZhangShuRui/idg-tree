@@ -44,6 +44,7 @@ if (process.env.CHANGELOG_TYPE) {
     }
   ]).then(ans=>{
     versionType = ans.versionType
+    fetch()
     generateChangelog()
   })
 }
@@ -84,6 +85,17 @@ function replaceVersion () {
   const pkgJson = fs.readFileSync(jsonPath, { encoding: 'utf-8' })
   const replacedPkgJson = pkgJson.replace(`"version": "${version}"`, `"version": "${versionOut}"`)
   fs.writeFileSync(jsonPath, replacedPkgJson, { encoding: 'utf-8' })
+}
+
+/**
+ * 获取远程仓库
+ **/
+function fetch (version) {
+  console.log('fetch origin tags')
+  const cp = require('child_process')
+  cp.execSync('git fetch')
+  cp.execSync('git pull origin master')
+  console.log('fetch success')
 }
 
 /**
