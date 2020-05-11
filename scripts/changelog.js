@@ -70,7 +70,8 @@ function generateChangelog() {
     preset: 'angular',
     outfile: logPath,
     outputUnreleased: 1,
-    releaseCount: 1
+    releaseCount: 1,
+    append: true
   }, () => { commit(versionOut) })
 }
 
