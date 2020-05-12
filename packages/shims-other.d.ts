@@ -15,8 +15,8 @@ declare module '*.png' {
   export default png;
 }
 declare module '*.vue' {
-  import Vue from 'vue'
-  export default Vue
+  import Vue from 'vue';
+  export default Vue;
 }
 declare module '*.woff';
 declare module '*.woff2';
