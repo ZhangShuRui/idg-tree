@@ -1,4 +1,7 @@
+import { Pages } from '@idg/idg';
 import Test from './Test';
-export default {
+const pages: Pages = {
   Test,
 };
+
+export default pages;

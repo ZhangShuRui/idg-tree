@@ -758,9 +758,10 @@
   version "0.1.1"
   resolved "http://npm.oneitfarm.com/@idg%2ffastclick/-/fastclick-0.1.1.tgz#8232f1d209d0a2e096529a02838b555f7e5ed29f"
 
-"@idg/helper@^3.0.0":
-  version "3.0.0"
-  resolved "http://npm.oneitfarm.com/@idg%2fhelper/-/helper-3.0.0.tgz#f72a45b472c9c086c6f4d27fe92a33a7dd57a6f8"
+"@idg/helper@^3.0.4":
+  version "3.0.4"
+  resolved "http://npm.oneitfarm.com/@idg%2fhelper/-/helper-3.0.4.tgz#abcb8019d0f1be31366fcc65ffbde7b3c901597a"
+  integrity sha512-4UZD2SZR86+yVmDJemJw1UBfmbjwcsEKphbUHeLs86w+83NXfENjFg2FPHJcievKfU0j6dGnRaXEG0RU0lF9SQ==
   dependencies:
     chalk "^3.0.0"
     ejs "^3.0.2"
