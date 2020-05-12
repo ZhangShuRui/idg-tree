@@ -16,7 +16,7 @@
 
 ### 2. 安装vscode插件
 - [tslint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin&ssr=false#overview)
--
+
 
 
 ## 开发
