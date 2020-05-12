@@ -38,3 +38,12 @@
 
 
 
+## [1.1.3](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/compare/1.1.2...1.1.3) (2020-05-12)
+
+
+### Features
+
+* **project:** add editorconfig, debug build launch ([252a79d](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/252a79db0da8041669f19a6f3bdd48a5dd495462))
+
+
+
