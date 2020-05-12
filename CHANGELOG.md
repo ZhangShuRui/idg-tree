@@ -47,3 +47,12 @@
 
 
 
+## [1.1.4](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/compare/1.1.3...1.1.4) (2020-05-12)
+
+
+### Features
+
+* **lint:** 加入tslint扩展配置,添加强制加分号规则 ([b1f3a27](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/b1f3a272c905748b319f2b3c2de127ee885caeab))
+
+
+
