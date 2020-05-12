@@ -1,9 +1,15 @@
 {
   "compilerOptions": {
+    "plugins": [
+      {
+        "name": "typescript-tslint-plugin"
+      }
+    ],
     "target": "esnext",
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
+    "allowJs": false,
     "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
@@ -30,7 +36,7 @@
       "dom",
       "dom.iterable",
       "scripthost"
-    ]
+    ],
   },
   "include": [
     "packages/**/*.ts",

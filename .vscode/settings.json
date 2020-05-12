@@ -1,0 +1,9 @@
+{
+  // tslint error直接显示error，默认显示成warning
+  "tslint.alwaysShowRuleFailuresAsWarnings": false,
+  "editor.fontSize": 14,
+  "editor.codeActionsOnSave": {
+    // tslint 自动修复
+    "source.fixAll.tslint": true
+  },
+}

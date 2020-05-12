@@ -6,6 +6,18 @@
 - 组件库文档 https://iview.qcloud-prod.oneitfarm.com/#/
 - css库文档 https://tailwindcss.com/
 - [更新日志](./CHANGELOG.md)
+- [tslint](https://github.com/palantir/tslint)
+
+## 准备
+### 1. 安装vscode
+推荐版本typescript为3.8.3的版本
+
+点击任一ts文件可以在状态栏看到typescript的[版本](https://code.visualstudio.com/Docs/languages/typescript#_using-newer-typescript-versions)信息
+
+### 2. 安装vscode插件
+- [tslint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin&ssr=false#overview)
+-
+
 
 ## 开发
 ``` bash
