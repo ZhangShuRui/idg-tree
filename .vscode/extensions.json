@@ -1,0 +1,8 @@
+{
+    // See http://go.microsoft.com/fwlink/?LinkId=827846
+    "recommendations": [
+        "EditorConfig.EditorConfig",
+        "ms-vscode.vscode-typescript-tslint-plugin",
+        "esbenp.prettier-vscode"
+    ]
+}
