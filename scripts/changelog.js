@@ -80,7 +80,12 @@ function generateChangelog() {
  * 替换package.json的版本号
  **/
 function replaceVersion () {
-  const log = fs.readFileSync(logPath, { encoding: 'utf-8'})
+  let log = ''
+  try {
+    log = fs.readFileSync(logPath, { encoding: 'utf-8'})
+  } catch(e) {
+    fs.writeFileSync(logPath,  log, { encoding: 'utf-8'})
+  }
   console.log('replace start', log)
   fs.writeFileSync(logPath, log, { encoding: 'utf-8' })
   const pkgJson = fs.readFileSync(jsonPath, { encoding: 'utf-8' })
