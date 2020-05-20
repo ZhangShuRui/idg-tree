@@ -24,11 +24,7 @@ const devConfig = {
 }
 
 const prodConfig = {
-  chainWebpack (cfg) {
-    chainWebpack(cfg, {
-      addExternals: true
-    })
-  },
+  chainWebpack,
   transpileDependencies,
   css: {
     loaderOptions: {
