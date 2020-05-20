@@ -72,11 +72,11 @@ Variable=`echo $GlobalVariable | sed "s/ //g"`
 green "Generate GlobalVariable $Variable"
 sed -i "" "s/IdgSeed/$Variable/g" package.json
 
+rm CHANGELOG.md
 git checkout --orphan latest_branch
 git add -A
 git commit -am "refactor: init"
 git branch -D master
 git branch -m master
 git push -f origin master
-rm CHANGELOG.md
-# rm init.sh
+rm init.sh
