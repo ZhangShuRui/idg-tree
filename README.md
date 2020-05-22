@@ -7,6 +7,8 @@
 - css库文档 https://tailwindcss.com/
 - [更新日志](./CHANGELOG.md)
 - [tslint](https://github.com/palantir/tslint)
+- [mock](http://mockjs.com/examples.html)
+- [样式规范](http://specification-web.qcloud-prod.oneitfarm.com/specification/code/css.html#%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8)
 
 ## 准备
 ### 1. 安装vscode
