@@ -3,7 +3,7 @@ import { Message } from '@idg/iview';
 import { Depend } from '@idg/idg';
 declare module 'vue/types/options' {
   interface ComponentOptions<V extends Vue> {
-    depends?: (string | Depend)[];
+    depends?: Array<string | Depend>;
   }
 }
 

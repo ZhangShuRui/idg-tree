@@ -57,7 +57,6 @@
     "svg-loader": "^0.0.2",
     "tailwindcss": "^1.1.4",
     "tempfile": "^3.0.0",
-    "tslint": "^6.1.2",
     "typescript": "3.8.3",
     "typescript-tslint-plugin": "^0.5.5",
     "vue": "^2.6.10",
