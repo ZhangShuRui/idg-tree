@@ -56,3 +56,13 @@
 
 
 
+## [1.1.5](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/compare/1.1.4...1.1.5) (2020-05-25)
+
+
+### Bug Fixes
+
+* **file api:** fix multipart form data ([dcd93e9](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/dcd93e98f574567ee9d667effa2184057328029f))
+* **svg:** fix svg loader ([b88b3c9](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/b88b3c96a2476fd57e013d9f4ef14bad36184b5c))
+
+
+
