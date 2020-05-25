@@ -4,6 +4,7 @@ const globby = require('globby')
 const { transpileDependencies, chainWebpack } = require('@idg/cli-config')
 
 const devConfig = {
+  chainWebpack,
   transpileDependencies,
   css: {
     loaderOptions: {
