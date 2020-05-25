@@ -765,9 +765,9 @@
     chalk "^3.0.0"
     ejs "^3.0.2"
 
-"@idg/idg@^2.8.17":
-  version "2.8.17"
-  resolved "http://npm.oneitfarm.com/@idg%2fidg/-/idg-2.8.17.tgz#78ca718af44a500e378a51a1e7d6910f8ec7a26f"
+"@idg/idg@^2.8.21":
+  version "2.8.21"
+  resolved "http://npm.oneitfarm.com/@idg%2fidg/-/idg-2.8.21.tgz#51ceeaf917f7b25f1241c4760a53c08119c92242"
   dependencies:
     "@idg/fastclick" "^0.1.1"
     core-js "^2.6.5"
