@@ -66,3 +66,12 @@
 
 
 
+## [1.1.6](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/compare/1.1.5...1.1.6) (2020-05-25)
+
+
+### Bug Fixes
+
+* **lint:** remove tslint use default 5.x ([2f44e45](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/2f44e45d18ed84bc46e48a2e487980d81464407e))
+
+
+
