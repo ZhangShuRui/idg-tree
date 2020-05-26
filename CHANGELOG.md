@@ -75,3 +75,17 @@
 
 
 
+# [1.2.0](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/compare/1.1.6...1.2.0) (2020-05-26)
+
+
+### Bug Fixes
+
+* **tslint:** tslint中删除一些和standard重复的 ([f4445aa](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/f4445aaaeab457573f43d9b1f523072f5263e439))
+
+
+### Features
+
+* **format:** 添加prettier代码格式化配置,和tslint保持一致 ([a3909ac](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/a3909acb23e303e0681043e7ffa508b009af16a4))
+
+
+
