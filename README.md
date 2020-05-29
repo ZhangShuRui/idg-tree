@@ -49,7 +49,11 @@ cpx packages/**/*.less dist/es/packages
 ```
 将依赖拷贝到dist/es/packages下面
 
-
+## 如果想连线上解决跨域问题
+``` bash
+# mac
+sudo  open -a "/Applications/Google Chrome.app" --args --disable-web-security  --user-data-dir=/Users/yourname/MyChromeDevUserData/
+```
 
 ## 自动生成并注册新的package/components/page/apis/controllers
 
