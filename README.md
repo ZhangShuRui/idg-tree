@@ -79,5 +79,15 @@ yarn run generate pkgname
 ```
 yarn run generate pkgname -a AdminApi -c Admin -p AdminPage AdminLoginPage -ctr AdminController -pr AdminTest
 ```
-
 #### -a,-p,-c,-ctr, -pr后面可带任意多个参数，文件名开头请大写;-pr添加及注册页面的同时会以当前页面名称增加一个路由(路由名称自行修改);
+
+### 翻译包下的locales/zh-CN.ts
+```
+yarn generate pkgname -t
+```
+注意：会在pkgname/locales下生成temp.txt,校验无误后自行复制粘贴到locales/en-US.ts
+
+### 导出所有包下的apis,components,pages,controllers
+```
+yarn generate --export
+```

@@ -29,7 +29,7 @@
     "@commitlint/config-conventional": "^8.3.4",
     "@idg/cli-config": "^1.0.4",
     "@idg/design": "^1.0.5",
-    "@idg/helper": "^3.0.4",
+    "@idg/helper": "^3.2.3",
     "@idg/idg": "^2.8.21",
     "@idg/iview": "^4.1.24",
     "@idg/mocker": "^1.0.1",

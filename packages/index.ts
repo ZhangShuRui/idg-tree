@@ -4,7 +4,7 @@ import packages from './packages';
 
 export default class TemplateService extends Service {
   constructor(channelOptions: ChannelOptions) {
-    const children: Service[]  = [
+    const children: Service[] = [
       /* new UcenterService({
         channelAlias: 'default',
       }), */
