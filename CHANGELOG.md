@@ -89,3 +89,13 @@
 
 
 
+## [1.2.1](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/compare/1.2.0...1.2.1) (2020-07-09)
+
+
+### Features
+
+* **depends:** 更新依赖包 ([9d6e15a](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/9d6e15a4509ba8477078a7fb9fd8a366cacd3a2a))
+* **升级@idg/helper:** 升级@idg/helper:增加导出api,component等功能&&修改readme ([dad0b55](https://gitlab.oneitfarm.com/itfarm_zhangyi/idg-vue-ts/commit/dad0b55532a17b438d355b12e6f6aa05a2f3c77c))
+
+
+
