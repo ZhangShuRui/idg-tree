@@ -743,9 +743,9 @@
   dependencies:
     "@hapi/hoek" "8.x.x"
 
-"@idg/cli-config@^1.0.4":
-  version "1.0.4"
-  resolved "http://npm.oneitfarm.com/@idg%2fcli-config/-/cli-config-1.0.4.tgz#a213b45f792e092596e8bcbf6bde487ed188f877"
+"@idg/cli-config@^1.1.1":
+  version "1.1.1"
+  resolved "https://npm.oneitfarm.com/@idg%2fcli-config/-/cli-config-1.1.1.tgz#bd1224aab3e89415efb4ed1a7214b531fc223928"
   dependencies:
     lodash "^4.17.15"
     read-pkg "^5.2.0"
@@ -761,7 +761,6 @@
 "@idg/helper@^3.2.3":
   version "3.2.3"
   resolved "http://npm.oneitfarm.com/@idg%2fhelper/-/helper-3.2.3.tgz#ee287acfe83221a9030e96025d39ace1c6fb03a2"
-  integrity sha512-qTPcUOwlrk57BCzO1SIGQ3T/3Y5lnDiNhhgPteBJ8oWSV9nuYQ8zgINiK/2e6UuJyFWeaH3+BFCQV3uaDnDyvQ==
   dependencies:
     add-stream "^1.0.0"
     axios "^0.19.2"
@@ -772,19 +771,18 @@
     lodash "^4.17.15"
     tempfile "^3.0.0"
 
-"@idg/idg@^2.8.21":
-  version "2.8.21"
-  resolved "http://npm.oneitfarm.com/@idg%2fidg/-/idg-2.8.21.tgz#51ceeaf917f7b25f1241c4760a53c08119c92242"
+"@idg/idg@^2.9.1":
+  version "2.9.1"
+  resolved "https://npm.oneitfarm.com/@idg%2fidg/-/idg-2.9.1.tgz#981d5fcc08ded54ba1c4686e86163ef388050a5d"
   dependencies:
     "@idg/fastclick" "^0.1.1"
     core-js "^2.6.5"
-    typedoc "^0.15.0"
-    vue-class-component "^7.0.2"
-    vue-property-decorator "^8.1.0"
+    vue-class-component "^7.2.3"
+    vue-property-decorator "^8.4.2"
 
-"@idg/iview@^4.1.24":
-  version "4.1.24"
-  resolved "http://npm.oneitfarm.com/@idg%2fiview/-/iview-4.1.24.tgz#80853b7027530e562384da56c8cf2a48f2d93058"
+"@idg/iview@^4.3.3":
+  version "4.3.3"
+  resolved "https://npm.oneitfarm.com/@idg%2fiview/-/iview-4.3.3.tgz#2918a1d160e5e823d030e884cf704ef3e8ad8d0c"
   dependencies:
     add-dom-event-listener "^1.1.0"
     async-validator "^1.10.0"
@@ -885,7 +883,7 @@
   version "4.14.138"
   resolved "https://npm.oneitfarm.com/@types%2flodash/-/lodash-4.14.138.tgz#34f52640d7358230308344e579c15b378d91989e"
 
-"@types/minimatch@*", "@types/minimatch@3.0.3":
+"@types/minimatch@*":
   version "3.0.3"
   resolved "https://npm.oneitfarm.com/@types%2fminimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
 
@@ -1380,7 +1378,6 @@ ansi-escapes@^3.2.0:
 ansi-escapes@^4.2.1:
   version "4.3.1"
   resolved "http://npm.oneitfarm.com/ansi-escapes/-/ansi-escapes-4.3.1.tgz#a5c47cc43181f1f38ffd7076837700d395522a61"
-  integrity sha1-pcR8xDGB8fOP/XB2g3cA05VSKmE=
   dependencies:
     type-fest "^0.11.0"
 
@@ -1631,7 +1628,6 @@ axios@^0.19.0:
 axios@^0.19.2:
   version "0.19.2"
   resolved "http://npm.oneitfarm.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
-  integrity sha1-PqNsXYgY0NX4qKl6bTa4bNwAyyc=
   dependencies:
     follow-redirects "1.5.10"
 
@@ -1707,12 +1703,6 @@ babel-runtime@^6.23.0, babel-runtime@^6.26.0, babel-runtime@^6.9.2:
 babylon@^6.18.0:
   version "6.18.0"
   resolved "https://npm.oneitfarm.com/babylon/-/babylon-6.18.0.tgz#af2f3b88fa6f5c1e4c634d1a0f8eac4f55b395e3"
-
-backbone@^1.4.0:
-  version "1.4.0"
-  resolved "https://npm.oneitfarm.com/backbone/-/backbone-1.4.0.tgz#54db4de9df7c3811c3f032f34749a4cd27f3bd12"
-  dependencies:
-    underscore ">=1.8.3"
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -2310,7 +2300,6 @@ cli-cursor@^2.1.0:
 cli-cursor@^3.1.0:
   version "3.1.0"
   resolved "http://npm.oneitfarm.com/cli-cursor/-/cli-cursor-3.1.0.tgz#264305a7ae490d1d03bf0c9ba7c925d1753af307"
-  integrity sha1-JkMFp65JDR0Dvwybp8kl0XU68wc=
   dependencies:
     restore-cursor "^3.1.0"
 
@@ -3850,7 +3839,6 @@ figures@^2.0.0:
 figures@^3.0.0:
   version "3.2.0"
   resolved "http://npm.oneitfarm.com/figures/-/figures-3.2.0.tgz#625c18bd293c604dc4a8ddb2febf0c88341746af"
-  integrity sha1-YlwYvSk8YE3EqN2y/r8MiDQXRq8=
   dependencies:
     escape-string-regexp "^1.0.5"
 
@@ -4075,7 +4063,7 @@ from2@^2.1.0:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
 
-fs-extra@8.1.0, fs-extra@^8.0.0, fs-extra@^8.1.0:
+fs-extra@8.1.0, fs-extra@^8.0.0:
   version "8.1.0"
   resolved "https://npm.oneitfarm.com/fs-extra/-/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
   dependencies:
@@ -4530,7 +4518,7 @@ hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://npm.oneitfarm.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
 
-highlight.js@^9.15.8, highlight.js@^9.6.0:
+highlight.js@^9.6.0:
   version "9.15.10"
   resolved "https://npm.oneitfarm.com/highlight.js/-/highlight.js-9.15.10.tgz#7b18ed75c90348c045eef9ed08ca1319a2219ad2"
 
@@ -4880,7 +4868,6 @@ inquirer@^6.3.1:
 inquirer@^7.1.0:
   version "7.1.0"
   resolved "http://npm.oneitfarm.com/inquirer/-/inquirer-7.1.0.tgz#1298a01859883e17c7264b82870ae1034f92dd29"
-  integrity sha1-EpigGFmIPhfHJkuChwrhA0+S3Sk=
   dependencies:
     ansi-escapes "^4.2.1"
     chalk "^3.0.0"
@@ -5311,10 +5298,6 @@ joi@^11.1.1:
     isemail "3.x.x"
     topo "2.x.x"
 
-jquery@^3.4.1:
-  version "3.4.1"
-  resolved "https://npm.oneitfarm.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
-
 js-calendar@^1.2.3:
   version "1.2.3"
   resolved "https://npm.oneitfarm.com/js-calendar/-/js-calendar-1.2.3.tgz#a583b0644b4e695ba394f344d103dbcc7a7a7d3e"
@@ -5680,10 +5663,6 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
-lunr@^2.3.6:
-  version "2.3.6"
-  resolved "https://npm.oneitfarm.com/lunr/-/lunr-2.3.6.tgz#f278beee7ffd56ad86e6e478ce02ab2b98c78dd5"
-
 make-dir@^2.0.0, make-dir@^2.1.0:
   version "2.1.0"
   resolved "https://npm.oneitfarm.com/make-dir/-/make-dir-2.1.0.tgz#5f0310e18b8be898cc07009295a30ae41e91e6f5"
@@ -5728,10 +5707,6 @@ map-visit@^1.0.0:
   resolved "https://npm.oneitfarm.com/map-visit/-/map-visit-1.0.0.tgz#ecdca8f13144e660f1b5bd41f12f3479d98dfb8f"
   dependencies:
     object-visit "^1.0.0"
-
-marked@^0.7.0:
-  version "0.7.0"
-  resolved "https://npm.oneitfarm.com/marked/-/marked-0.7.0.tgz#b64201f051d271b1edc10a04d1ae9b74bb8e5c0e"
 
 math-random@^1.0.1:
   version "1.0.4"
@@ -5956,7 +5931,7 @@ minimalistic-crypto-utils@^1.0.0, minimalistic-crypto-utils@^1.0.1:
   version "1.0.1"
   resolved "https://npm.oneitfarm.com/minimalistic-crypto-utils/-/minimalistic-crypto-utils-1.0.1.tgz#f6c00c1c0b082246e5c4d99dfb8c7c083b2b582a"
 
-minimatch@3.0.4, minimatch@^3.0.0, minimatch@^3.0.2, minimatch@^3.0.4:
+minimatch@3.0.4, minimatch@^3.0.2, minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://npm.oneitfarm.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   dependencies:
@@ -6151,7 +6126,6 @@ mute-stream@0.0.7:
 mute-stream@0.0.8:
   version "0.0.8"
   resolved "http://npm.oneitfarm.com/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
-  integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
 
 mz@^2.4.0:
   version "2.7.0"
@@ -7330,10 +7304,6 @@ process@^0.11.10:
   version "0.11.10"
   resolved "https://npm.oneitfarm.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
 
-progress@^2.0.3:
-  version "2.0.3"
-  resolved "https://npm.oneitfarm.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
-
 promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://npm.oneitfarm.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
@@ -7897,7 +7867,6 @@ restore-cursor@^2.0.0:
 restore-cursor@^3.1.0:
   version "3.1.0"
   resolved "http://npm.oneitfarm.com/restore-cursor/-/restore-cursor-3.1.0.tgz#39f67c54b3a7a58cea5236d95cf0034239631f7e"
-  integrity sha1-OfZ8VLOnpYzqUjbZXPADQjljH34=
   dependencies:
     onetime "^5.1.0"
     signal-exit "^3.0.2"
@@ -8952,7 +8921,6 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
 type-fest@^0.11.0:
   version "0.11.0"
   resolved "http://npm.oneitfarm.com/type-fest/-/type-fest-0.11.0.tgz#97abf0872310fed88a5c466b25681576145e33f1"
-  integrity sha1-l6vwhyMQ/tiKXEZrJWgVdhReM/E=
 
 type-fest@^0.13.1:
   version "0.13.1"
@@ -8977,31 +8945,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://npm.oneitfarm.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typedoc-default-themes@^0.6.0:
-  version "0.6.0"
-  resolved "https://npm.oneitfarm.com/typedoc-default-themes/-/typedoc-default-themes-0.6.0.tgz#7e73bf54dd9e11550dd0fb576d5176b758f8f8b5"
-  dependencies:
-    backbone "^1.4.0"
-    jquery "^3.4.1"
-    lunr "^2.3.6"
-    underscore "^1.9.1"
-
-typedoc@^0.15.0:
-  version "0.15.0"
-  resolved "https://npm.oneitfarm.com/typedoc/-/typedoc-0.15.0.tgz#21eaf4db41cf2797bad027a74f2a75cd08ae0c2d"
-  dependencies:
-    "@types/minimatch" "3.0.3"
-    fs-extra "^8.1.0"
-    handlebars "^4.1.2"
-    highlight.js "^9.15.8"
-    lodash "^4.17.15"
-    marked "^0.7.0"
-    minimatch "^3.0.0"
-    progress "^2.0.3"
-    shelljs "^0.8.3"
-    typedoc-default-themes "^0.6.0"
-    typescript "3.5.x"
-
 typescript-tslint-plugin@^0.5.5:
   version "0.5.5"
   resolved "http://npm.oneitfarm.com/typescript-tslint-plugin/-/typescript-tslint-plugin-0.5.5.tgz#673875c43640251f1ab3d63745d7d49726ff961c"
@@ -9009,10 +8952,6 @@ typescript-tslint-plugin@^0.5.5:
     minimatch "^3.0.4"
     mock-require "^3.0.3"
     vscode-languageserver "^5.2.1"
-
-typescript@3.5.x:
-  version "3.5.3"
-  resolved "https://npm.oneitfarm.com/typescript/-/typescript-3.5.3.tgz#c830f657f93f1ea846819e929092f5fe5983e977"
 
 typescript@3.8.3:
   version "3.8.3"
@@ -9031,10 +8970,6 @@ uglify-js@^3.1.4:
   dependencies:
     commander "~2.20.0"
     source-map "~0.6.1"
-
-underscore@>=1.8.3, underscore@^1.9.1:
-  version "1.9.1"
-  resolved "https://npm.oneitfarm.com/underscore/-/underscore-1.9.1.tgz#06dce34a0e68a7babc29b365b8e74b8925203961"
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
@@ -9245,9 +9180,13 @@ vscode-uri@^1.0.6:
   version "1.0.8"
   resolved "http://npm.oneitfarm.com/vscode-uri/-/vscode-uri-1.0.8.tgz#9769aaececae4026fb6e22359cb38946580ded59"
 
-vue-class-component@^7.0.1, vue-class-component@^7.0.2, vue-class-component@^7.1.0:
+vue-class-component@^7.0.1, vue-class-component@^7.1.0:
   version "7.1.0"
   resolved "https://npm.oneitfarm.com/vue-class-component/-/vue-class-component-7.1.0.tgz#b33efcb10e17236d684f70b1e96f1946ec793e87"
+
+vue-class-component@^7.2.3:
+  version "7.2.3"
+  resolved "https://npm.oneitfarm.com/vue-class-component/-/vue-class-component-7.2.3.tgz#a5b1abd53513a72ad51098752e2dedd499807cca"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
@@ -9267,11 +9206,17 @@ vue-loader@^15.9.1:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-property-decorator@^8.1.0, vue-property-decorator@^8.2.1:
+vue-property-decorator@^8.2.1:
   version "8.2.2"
   resolved "https://npm.oneitfarm.com/vue-property-decorator/-/vue-property-decorator-8.2.2.tgz#ac895e9508ee1bf86e3a28568d94d842c2c8e42f"
   dependencies:
     vue-class-component "^7.0.1"
+
+vue-property-decorator@^8.4.2:
+  version "8.5.1"
+  resolved "https://npm.oneitfarm.com/vue-property-decorator/-/vue-property-decorator-8.5.1.tgz#571a91cf8d2b507f537d79bf8275af3184572fff"
+  dependencies:
+    vue-class-component "^7.1.0"
 
 vue-ref@^1.0.6:
   version "1.0.6"
