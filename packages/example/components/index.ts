@@ -1,8 +1,8 @@
 import { Components } from '@idg/idg';
-import Hello from './Hello';
+import IdgTree from './IdgTree';
 import TestModal from './TestModal';
-const components: Components =  {
-  Hello,
+const components: Components = {
+  IdgTree,
   TestModal,
 };
 
