@@ -1,11 +1,12 @@
-
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { Icon, Checkbox } from '@idg/iview';
 import '../styles/idg-tree.less';
 import _ from 'lodash';
 import { v4 as uuidv4 } from 'uuid';
 import { Log } from '@idg/idg';
+
 const TAG = 'IdgTree';
+
 interface TreeData {
   _uuid: string;
   deep: number;
@@ -66,9 +67,9 @@ export default class IdgTree extends Vue {
   }
 
   public render() {
-    Log.debug(TAG, 'slot', this.$scopedSlots);
     return <div
-      class='idg-tree'>
+      class='idg-tree'
+      style={{ backgroundColor: this.bgColor || 'white' }}>
       {
         this.renderTree(this.source)
       }
@@ -87,8 +88,12 @@ export default class IdgTree extends Vue {
               paddingLeft: item.deep * this.retract - (!item.showIcon ? 12 : 0) + this.containerPadding + (this.showCheckbox ? 26 : 0) + 'px',
               backgroundColor: this.curSelectedUUID === item._uuid ? this.selectedColor : this.bgColor,
             }}
-            onmouseenter={() => { this.handleMouseEnter(item); }}
-            onmouseleave={() => { this.handleMouseLeave(item); }}
+            onmouseenter={() => {
+              this.handleMouseEnter(item);
+            }}
+            onmouseleave={() => {
+              this.handleMouseLeave(item);
+            }}
             onClick={(event: Event) => this.handleSelectedChange(event, item)}>
 
             {
@@ -106,7 +111,7 @@ export default class IdgTree extends Vue {
             {
               (this.showPrefixCustomIcon && this.prefixCustomIcon && item.showIcon && (item[this.keys.children] &&
                 item[this.keys.children].length > 0)) &&
-              (<img width={16} height={16} src={this.prefixCustomIcon} />)
+              (<img width={16} height={16} src={this.prefixCustomIcon} alt={''} />)
             }
 
             {
@@ -116,9 +121,8 @@ export default class IdgTree extends Vue {
                 type={item.expand ? 'ios-arrow-down' : 'ios-arrow-forward'}
                 onClick={(event: Event) => this.handleToggleExpand(event, item)} />
             }
-            <span class='truncate'>
-              {item[this.keys.label] + (this.curHoverUUID === item._uuid ? `-${item.id}` : '')}
-            </span>
+            <span
+              class='truncate'>{item[this.keys.label] + (this.curHoverUUID === item._uuid ? `-${item.id}` : '')}</span>
 
             {
               this.showOperation &&
@@ -157,9 +161,9 @@ export default class IdgTree extends Vue {
 
   // TODO 状态有问题，后面修复
   public handleCheckedChanged(item: TreeData, state: boolean) {
-    let deep = item.deep;
-    // 遍历下面所有的子节点
-    this.setKeys([item], 'checked', state, true);
+    Log.debug(TAG, '变更复选框状态：', item, state);
+
+    // 先把自己及自己的下级状态变更
     const that = this;
 
     function func(data: TreeData, val: boolean) {
@@ -171,56 +175,50 @@ export default class IdgTree extends Vue {
       }
     }
     func(item, state);
+    const peers: TreeData[] = [];
 
-    function func2(source: TreeData[]) {
-      source.forEach((vv: TreeData) => {
-        if (vv.deep === deep) {
-          const allStatus = that.getByDeep(source, deep)
-            .map((v: TreeData) => {
-              return v.checked;
-            });
-          if (Array.from(new Set(allStatus)).length === 2) {
-
-            that.getByDeep(source, --deep)
-              .forEach((v: TreeData) => {
-                v.checked = true;
-              });
-          } else {
-            const childState = Array.from(new Set(allStatus))[0];
-            that.getByDeep(source, --deep)
-              .forEach((v: TreeData) => {
-                v.checked = childState;
-              });
-          }
+    function getPeerStatus(source: TreeData[], deep: number) {
+      source.forEach((v: TreeData) => {
+        if (v.deep === deep) {
+          peers.push(v);
         } else {
-          if (vv.children && vv.children.length > 0) {
-            func2(vv.children);
+          if (v.children && v.children.length > 0) {
+            getPeerStatus(v.children, deep);
           }
         }
       });
     }
-    func2(this.source);
 
-    // 筛选出所有被选中的项目
+    getPeerStatus(this.source, item.deep);
+
+    const peerState = Array.from(new Set(peers.map((vv: TreeData) => {
+      return vv.checked;
+    })));
+    Log.debug(TAG, 'peers:', peers, peerState);
+
+    // const fathers: TreeData[] = [];
+    // function getAllFathers(source: TreeData[], deep: number) {
+    //   if (deep < 0) {
+    //     return;
+    //   }
+    //   source.forEach((v: TreeData) => {
+    //     if (v.deep === deep) {
+    //       fathers.push(v);
+    //     } else if (v.children && v.children.length > 0) {
+    //       getAllFathers(v.children, deep);
+    //     }
+    //   });
+    // }
+    // getAllFathers(this.source, --item.deep);
+    // fathers.forEach((father: TreeData) => {
+    //   const exist = _.find(father.children, (child: TreeData) => child._uuid === item._uuid);
+    //   if (exist) {
+    //     father.checked = peerState.length === 1 ? peerState[0] : true;
+    //   }
+    // });
+    //
+    // Log.debug(TAG, 'fathers:', fathers);
     this.$emit('check-change', item, state);
-  }
-
-  public getByDeep(source: TreeData[], deep: number) {
-    const target: TreeData[] = [];
-
-    function fn(data: TreeData[]) {
-      data.forEach((item: TreeData) => {
-        if (item.deep === deep) {
-          target.push(item);
-        } else {
-          if (item.children && item.children.length > 0) {
-            fn(item.children);
-          }
-        }
-      });
-    }
-    fn(source);
-    return target;
   }
 
   public handleSelectedChange(event: Event, item: TreeData) {
@@ -277,4 +275,7 @@ export default class IdgTree extends Vue {
     return list;
   }
 
+  public created() {
+    Log.debug(TAG, 'created');
+  }
 }
